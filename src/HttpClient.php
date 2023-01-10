@@ -180,7 +180,7 @@ class HttpClient
             $curlOptions[\CURLOPT_RETURNTRANSFER] = true;
         }
 
-        \curl_reset($this->curlHandle);
+        // \curl_reset($this->curlHandle);
         \curl_setopt_array($this->curlHandle, $curlOptions);
 
         $result = \curl_exec($this->curlHandle);
